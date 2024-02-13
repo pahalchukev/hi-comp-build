@@ -10,7 +10,8 @@
       "import": "./dist/hi-comp.js",
       "require": "./dist/hi-comp.umd.cjs"
     },
-    "./styles.css": "./dist/styles.css",
+    "./dist/styles.css": "./dist/styles.css",
+    "./dist/tailwind.css": "./dist/tailwind.css",
     "./dist/tailwind.options.js": "./dist/tailwind.options.js",
     "./dist/store.js": "./dist/store.js",
     "./dist/mixins/index.js": "./dist/mixins/index.js"
