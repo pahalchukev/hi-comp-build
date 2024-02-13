@@ -1,14 +1,14 @@
 {
-  "name": "hi-comp",
+  "name": "hi-pack",
   "version": "0.0.4",
   "private": false,
   "type": "module",
-  "main": "./dist/hi-comp.umd.cjs",
-  "module": "./dist/hi-comp.js",
+  "main": "./dist/hi-pack.umd.cjs",
+  "module": "./dist/hi-pack.js",
   "exports": {
     ".": {
-      "import": "./dist/hi-comp.js",
-      "require": "./dist/hi-comp.umd.cjs"
+      "import": "./dist/hi-pack.js",
+      "require": "./dist/hi-pack.umd.cjs"
     },
     "./dist/styles.css": "./dist/styles.css",
     "./dist/tailwind.css": "./dist/tailwind.css",
