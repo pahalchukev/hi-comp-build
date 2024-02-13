@@ -1,0 +1,38 @@
+{
+  "name": "hi-comp",
+  "version": "0.0.4",
+  "private": false,
+  "type": "module",
+  "main": "./dist/hi-comp.umd.cjs",
+  "module": "./dist/hi-comp.js",
+  "exports": {
+    ".": {
+      "import": "./dist/hi-comp.js",
+      "require": "./dist/hi-comp.umd.cjs"
+    },
+    "./styles.css": "./dist/styles.css",
+    "./dist/tailwind.options.js": "./dist/tailwind.options.js",
+    "./dist/store.js": "./dist/store.js",
+    "./dist/mixins/index.js": "./dist/mixins/index.js"
+  },
+  "scripts": {
+    "build": "bash ./build.sh"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.7.19",
+    "moment-timezone": "^0.5.45",
+    "video.js-bundle": "git+https://git:pQyTczwTPGrrj4K71nUg@git.hibrid-vod.dev/vod/embed/players/video.js-bundle.git",
+    "vue": "^3.4.15",
+    "vue-collapsed": "^1.3.0",
+    "vue-select": "^4.0.0-beta.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.3",
+    "autoprefixer": "^10.4.17",
+    "cpy-cli": "^5.0.0",
+    "postcss": "^8.4.35",
+    "sass": "^1.70.0",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.1.0"
+  }
+}
