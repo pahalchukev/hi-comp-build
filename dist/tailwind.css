@@ -3392,14 +3392,6 @@ aside.is-expanded ~ .paginator {
   .md\:block{
     display: block;
   }
-
-  .md\:w-1\/2{
-    width: 50%;
-  }
-
-  .md\:w-1\/4{
-    width: 25%;
-  }
 }
 
 /*# sourceMappingURL=tailwind.css.map */

@@ -1187,8 +1187,8 @@ const M5 = /* @__PURE__ */ h1("div", { class: "fixed inset-0 bg-black/25" }, nul
                   default: He(() => [
                     At(Pe(o5), {
                       class: q1([{
-                        "w-full md:w-1/4": i.size === "small",
-                        "w-full md:w-1/2": i.size === "medium",
+                        "w-1/4": i.size === "small",
+                        "w-1/2": i.size === "medium",
                         "w-full": i.size === "large",
                         "max-w-max min-w-[300px]": i.size === "content"
                       }, "transform rounded bg-white p-6 text-left align-middle shadow-xl transition-all"])
