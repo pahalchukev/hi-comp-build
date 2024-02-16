@@ -1512,7 +1512,7 @@ const M5 = /* @__PURE__ */ h1("div", { class: "fixed inset-0 bg-black/25" }, nul
       return `Showing ${d} - ${b} of ${r.total} items`;
     });
     function p(d) {
-      o.value = d, n("page-change", d);
+      o.value != d && (o.value = d, n("page-change", d));
     }
     function u(d) {
       n("per-page-change", d.count), o.value = 1, localStorage.setItem("itemsPerPage", d.count);
@@ -1536,7 +1536,7 @@ const M5 = /* @__PURE__ */ h1("div", { class: "fixed inset-0 bg-black/25" }, nul
             onClick: b[1] || (b[1] = (M) => p(1)),
             currentPage: o.value
           }, null, 8, ["currentPage"]),
-          o.value > 4 ? (N0(), at(ur, {
+          o.value > 3 && d.$props.lastPage > 4 ? (N0(), at(ur, {
             key: 0,
             title: l.dots,
             hoverable: !1
@@ -1546,7 +1546,7 @@ const M5 = /* @__PURE__ */ h1("div", { class: "fixed inset-0 bg-black/25" }, nul
             title: M,
             currentPage: o.value
           }, null, 8, ["onClick", "title", "currentPage"]))), 256)),
-          o.value < d.$props.lastPage - 3 ? (N0(), at(ur, {
+          o.value < d.$props.lastPage - 2 && d.$props.lastPage > 4 ? (N0(), at(ur, {
             key: 1,
             title: l.dots,
             hoverable: !1
