@@ -1443,7 +1443,7 @@ const M5 = /* @__PURE__ */ h1("div", { class: "fixed inset-0 bg-black/25" }, nul
         onInput: o[0] || (o[0] = (a) => n("update:modelValue", a.target.checked))
       }), null, 16, x5),
       h1("span", {
-        class: q1(["w-[34px] h-[14px] rounded-full flex items-center justify-start border-color-[var(--light-blue)]", { "bg-[var(--light-grey)]": !i.modelValue, "bg-[var(--light-blue)] border ": i.modelValue }])
+        class: q1(["w-[34px] h-[14px] rounded-full border-[1px] border-[var(--border-grey)] flex items-center justify-start border-color-[var(--light-blue)]", { "bg-[var(--light-grey)]": !i.modelValue, "bg-[var(--light-blue)] border ": i.modelValue }])
       }, [
         h1("span", {
           class: q1(["w-5 h-5 transition-all duration-800 rounded-full", { "bg-[var(--grey)] mr-auto": !i.modelValue, "bg-[var(--blue)] ml-auto": i.modelValue }])

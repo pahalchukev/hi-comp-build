@@ -1028,6 +1028,10 @@ video {
   border-color: transparent;
 }
 
+.border-\[var\(--border-grey\)\]{
+  border-color: var(--border-grey);
+}
+
 .border-\[var\(--grey\)\]{
   border-color: var(--grey);
 }
