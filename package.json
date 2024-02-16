@@ -17,7 +17,8 @@
     "./dist/mixins/index.js": "./dist/mixins/index.js"
   },
   "scripts": {
-    "build": "bash ./build.sh"
+    "build": "bash ./build.sh",
+    "dev": "set NODE_ENV=dev && vite"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.16",
