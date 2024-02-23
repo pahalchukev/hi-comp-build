@@ -49239,7 +49239,8 @@ const ED = {
         sources: [
           {
             src: i.embed_url,
-            type: "application/x-mpegURL"
+            type: "application/x-mpegURL",
+            withCredentials: i.withCredentials ?? !1
           }
         ],
         poster: this.poster ?? i.thumbnail,
