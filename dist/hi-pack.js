@@ -1545,7 +1545,7 @@ const f5 = /* @__PURE__ */ h1("div", { class: "fixed inset-0 bg-black/25" }, nul
           key: 0,
           title: l.prev,
           hoverable: !1,
-          onClick: b[0] || (b[0] = (M) => p(--o.value))
+          onClick: b[0] || (b[0] = (M) => p(o.value - 1))
         }, null, 8, ["title"])) : x1("", !0),
         h1("div", D5, [
           At(ur, {
@@ -1579,7 +1579,7 @@ const f5 = /* @__PURE__ */ h1("div", { class: "fixed inset-0 bg-black/25" }, nul
           key: 1,
           title: l.next,
           hoverable: !1,
-          onClick: b[3] || (b[3] = (M) => p(++o.value))
+          onClick: b[3] || (b[3] = (M) => p(o.value + 1))
         }, null, 8, ["title"])) : x1("", !0)
       ])) : x1("", !0),
       h1("div", X5, [
