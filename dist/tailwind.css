@@ -5401,14 +5401,14 @@ video::-webkit-media-text-track-display {
   display: flex;
   position: relative;
   height: 56px;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
 .platform__menu-top {
   display: flex;
   align-items: center;
-  height: 54px;
+  height: 55px;
   border: solid 1px #d6d8dc;
   width: 148px;
   padding: 0 16px;
