@@ -1394,7 +1394,7 @@ const f5 = /* @__PURE__ */ D0("div", { class: "fixed inset-0 bg-black/25" }, nul
   setup(i, { emit: e }) {
     const r = i, n = e;
     return (t, o) => (B0(), j0("input", ha(t.$attrs, {
-      class: "w-full p-2 rounded-md border-[1px] border-[var(--light-grey-alternative)] focus:ring-0 outline-none text-gray-500 text-[14px]",
+      class: "w-full p-2 rounded-md border-[1px] border-[var(--light-grey-alternative)] focus:ring-0 outline-none text-gray-500 text-[14px] hi-input",
       value: r.modelValue,
       onInput: o[0] || (o[0] = (a) => n("update:modelValue", a.target.value))
     }), null, 16, L5));
@@ -1609,7 +1609,7 @@ function H5(i, e) {
     class: g1(["flex justify-center items-center min-h-[50px] w-full", i.$attrs.class])
   }, Z5, 2);
 }
-const U5 = /* @__PURE__ */ bl(j5, [["render", H5]]), V5 = { class: "w-full overflow-auto py-4 custom-scroll relative" }, $5 = { class: "w-full z-[11] bg-[var(--almost-white)] py-4 shadow-md" }, tF = {
+const U5 = /* @__PURE__ */ bl(j5, [["render", H5]]), V5 = { class: "w-full overflow-auto py-4 custom-scroll relative" }, $5 = { class: "hi-table" }, tF = {
   __name: "HiTable",
   props: { preload: { type: Boolean, default: !1 } },
   setup(i) {
@@ -1656,7 +1656,7 @@ const U5 = /* @__PURE__ */ bl(j5, [["render", H5]]), V5 = { class: "w-full overf
   },
   setup(i) {
     return (e, r) => (B0(), j0("td", {
-      class: g1(["px-[5px] text-[12px] py-1 xs:whitespace-normal whitespace-nowrap font-sans-pro text-[var(--dark)] min-h-20 h-20 border-2 border-[var(--light-grey)] leading-4 tracking-[-0.002em]", {
+      class: g1(["hi-table__raw-td", {
         [`${e.$props.css}`]: e.$props.css,
         [`text-${e.$props.position}`]: e.$props.position
       }]),
@@ -1682,7 +1682,7 @@ const U5 = /* @__PURE__ */ bl(j5, [["render", H5]]), V5 = { class: "w-full overf
       t.value = t.value === "asc" ? "desc" : "asc", n("change-sort", { type: t.value, field: r.orderBy });
     }
     return (a, s) => (B0(), j0("th", {
-      class: g1(["px-[5px] text-[12px] font-[700 OpenSans-CondBold] text-[var(--dark)] min-h-8 h-8 border-2 border-[var(--light-grey)] leading-4 tracking-[-0.003em]", {
+      class: g1(["hi-table__raw-th", {
         [`${a.$props.css}`]: a.$props.css,
         "cursor-pointer": a.$props.sortable
       }]),
@@ -1705,8 +1705,8 @@ const U5 = /* @__PURE__ */ bl(j5, [["render", H5]]), V5 = { class: "w-full overf
   setup(i) {
     return (e, r) => (B0(), j0("tr", ha({
       class: {
-        "bg-[var(--blue-light)] min-h-8 h-8 border-2 border-[var(--light-grey)]": e.$props.isHead,
-        "odd:bg-[var(-light-grey)] even:bg-white": !e.$props.isHead
+        "hi-table__raw-head": e.$props.isHead,
+        "hi-table__raw": !e.$props.isHead
       }
     }, e.$attrs), [
       Oe(e.$slots, "default")
@@ -49560,7 +49560,7 @@ const XD = /* @__PURE__ */ Ce({
       ])
     ]));
   }
-}, gj = {}, mj = { class: "flex flex-col w-full items-center gap-4 text-center text-[--orange] text-[20px] font-cond-b justify-center mt-40" }, vj = /* @__PURE__ */ D0("p", null, "There are no records currently available to be displayed.", -1);
+}, gj = {}, mj = { class: "flex flex-col w-full items-center gap-4 text-center text-[#45454D] text-[20px] font-cond-b justify-center mt-40" }, vj = /* @__PURE__ */ D0("p", null, "There are no records currently available to be displayed.", -1);
 function qj(i, e) {
   return B0(), j0("div", mj, [
     vj,
