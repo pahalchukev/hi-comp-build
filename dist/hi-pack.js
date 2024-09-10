@@ -49573,7 +49573,9 @@ const bF = /* @__PURE__ */ bl(vj, [["render", _j]]), Wj = { class: "platform__me
   __name: "HiPlatformMenu",
   props: {
     links: { type: Array, required: !0 },
-    type: { type: String, required: !0 }
+    type: { type: String, required: !0 },
+    clickFn: { type: Function, default: () => {
+    } }
   },
   setup(i) {
     const e = i, r = Y0(!1), n = $0(() => e.links.find((a) => a.type === e.type));
@@ -49587,7 +49589,8 @@ const bF = /* @__PURE__ */ bl(vj, [["render", _j]]), Wj = { class: "platform__me
       D0("div", {
         onMouseenter: t,
         onMouseleave: o,
-        class: "platform__menu-top"
+        class: "platform__menu-top",
+        onClick: s[0] || (s[0] = (...c) => e.clickFn && e.clickFn(...c))
       }, [
         D0("div", {
           innerHTML: n.value.image
