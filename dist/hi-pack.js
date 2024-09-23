@@ -1773,15 +1773,22 @@ const _a = /* @__PURE__ */ le(Ea, [["render", ha]]), Ta = { class: "w-full overf
       });
     },
     async initialize() {
+      var e, I;
       if (await this.createElement(), !window.HiplayerLoader)
         return;
       let i = {
-        player: { poster: this.video.thumbnail },
-        stream: { url: this.video.embed_url }
+        player: {
+          poster: this.video.thumbnail,
+          ...(e = this.options) == null ? void 0 : e.player
+        },
+        stream: {
+          url: this.video.embed_url,
+          ...(I = this.options) == null ? void 0 : I.stream
+        }
       };
-      this.defaultOptions = Object.assign(this.defaultOptions, i), this.defaultOptions = Object.assign(this.defaultOptions, this.options);
-      for (let e in this.defaultOptions)
-        this.defaultOptions[e] === null && delete this.defaultOptions[e];
+      this.defaultOptions = Object.assign(this.defaultOptions, i);
+      for (let a in this.defaultOptions)
+        this.defaultOptions[a] === null && delete this.defaultOptions[a];
       window.HiplayerLoader.setup(this.element, window.btoa(JSON.stringify(this.defaultOptions)));
     },
     createElement() {
@@ -1838,6 +1845,10 @@ const Va = /* @__PURE__ */ le(Oa, [["render", Na]]), ms = {
     instanceElementId: {
       type: String,
       default: "video-preview"
+    },
+    options: {
+      type: Object,
+      default: {}
     }
   },
   emits: ["update"],
@@ -1854,8 +1865,9 @@ const Va = /* @__PURE__ */ le(Oa, [["render", Na]]), ms = {
         M(Va, {
           play: i.play,
           video: i.video,
+          options: i.options,
           elementId: i.instanceElementId
-        }, null, 8, ["play", "video", "elementId"])
+        }, null, 8, ["play", "video", "options", "elementId"])
       ]),
       _: 1
     }, 8, ["is-open"]));
