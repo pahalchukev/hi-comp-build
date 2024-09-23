@@ -1715,7 +1715,7 @@ const _a = /* @__PURE__ */ le(Ea, [["render", ha]]), Ta = { class: "w-full overf
     ], 16));
   }
 }, Oa = {
-  name: "HiPlayer",
+  name: "HiVideoJs",
   props: {
     minHeight: {
       type: Number,
