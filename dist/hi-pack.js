@@ -1773,12 +1773,16 @@ const _a = /* @__PURE__ */ le(Ea, [["render", ha]]), Ta = { class: "w-full overf
       });
     },
     async initialize() {
-      if (await this.createElement(), !!window.HiplayerLoader) {
-        this.video.player.poster = this.video.thumbnail, this.video.stream.url = this.video.embed_url, this.defaultOptions = Object.assign(this.defaultOptions, this.video), this.defaultOptions = Object.assign(this.defaultOptions, this.options);
-        for (let i in this.defaultOptions)
-          this.defaultOptions[i] === null && delete this.defaultOptions[i];
-        window.HiplayerLoader.setup(this.element, window.btoa(JSON.stringify(this.defaultOptions)));
-      }
+      if (await this.createElement(), !window.HiplayerLoader)
+        return;
+      let i = {
+        player: { poster: this.video.thumbnail },
+        stream: { url: this.video.embed_url }
+      };
+      this.defaultOptions = Object.assign(this.defaultOptions, i), this.defaultOptions = Object.assign(this.defaultOptions, this.options);
+      for (let e in this.defaultOptions)
+        this.defaultOptions[e] === null && delete this.defaultOptions[e];
+      window.HiplayerLoader.setup(this.element, window.btoa(JSON.stringify(this.defaultOptions)));
     },
     createElement() {
       return new Promise((i, e) => {
