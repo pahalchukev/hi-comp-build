@@ -1715,7 +1715,7 @@ const _a = /* @__PURE__ */ le(Ea, [["render", ha]]), Ta = { class: "w-full overf
     ], 16));
   }
 }, Oa = {
-  name: "HiVideoJs",
+  name: "HiPlayer",
   props: {
     minHeight: {
       type: Number,
@@ -1738,9 +1738,12 @@ const _a = /* @__PURE__ */ le(Ea, [["render", ha]]), Ta = { class: "w-full overf
       version: "v8.1.1",
       loading: !1,
       defaultOptions: {
-        streamUrl: "https://demo.hibridcdn.net/vod/a61c4eb5-3711-4900-bb54-6711a0db8f03/smil:G1NRZAu51SsG9CGH.smil/playlist.m3u8",
-        poster: "https://embed.hibrid-vod.dev/static/bundles/demo_video/test.jpg",
-        autoPlay: !0
+        stream: {
+          url: "https://demo.hibridcdn.net/vod/a61c4eb5-3711-4900-bb54-6711a0db8f03/smil:G1NRZAu51SsG9CGH.smil/playlist.m3u8"
+        },
+        player: {
+          poster: "https://embed.hibrid-vod.dev/static/bundles/demo_video/test.jpg"
+        }
       }
     };
   },
@@ -2342,6 +2345,7 @@ export {
   ts as HiNotification,
   ns as HiPagination,
   js as HiPlatformMenu,
+  Va as HiPlayer,
   _a as HiPreloader,
   ja as HiSelect,
   ds as HiSwitch,
@@ -2352,6 +2356,5 @@ export {
   Gs as HiTableRow,
   ss as HiTextarea,
   Ps as HiTranslationHeader,
-  Va as HiVideoJs,
   ms as HiVideoPreview
 };
