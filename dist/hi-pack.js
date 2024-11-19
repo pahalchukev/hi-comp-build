@@ -1855,7 +1855,8 @@ const Va = /* @__PURE__ */ le(Oa, [["render", Na]]), ms = {
   setup(i, { emit: e }) {
     const I = i, a = e;
     function l() {
-      a("update:play", !1), I.handlerCloseVideo();
+      let t = window.HibridPlayer.player;
+      t && t.dispose(), a("update:play", !1), I.handlerCloseVideo();
     }
     return (t, o) => (Z(), N(De, {
       "is-open": i.play,
