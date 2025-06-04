@@ -1739,7 +1739,7 @@ const _a = /* @__PURE__ */ le(Ea, [["render", ha]]), Ta = { class: "w-full overf
       player: null,
       element: `hiplayer-${Math.floor(Math.random() * 1e5)}`,
       player_id: `player_${Math.floor(Math.random() * 1e5)}`,
-      version: "v8.2.1.19",
+      version: "v8.2.1",
       loading: !1,
       defaultOptions: {
         stream: {
