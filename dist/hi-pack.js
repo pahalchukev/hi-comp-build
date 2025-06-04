@@ -1740,6 +1740,7 @@ const _a = /* @__PURE__ */ le(Ea, [["render", ha]]), Ta = { class: "w-full overf
       element: `hiplayer-${Math.floor(Math.random() * 1e5)}`,
       player_id: `player_${Math.floor(Math.random() * 1e5)}`,
       version: "v8.2.1",
+      subversion: "v8.2.1.19",
       loading: !1,
       defaultOptions: {
         stream: {
@@ -1759,7 +1760,7 @@ const _a = /* @__PURE__ */ le(Ea, [["render", ha]]), Ta = { class: "w-full overf
           return;
         }
         const I = document.createElement("script");
-        I.src = `https://hiplayer.hibridcdn.net/l/${this.version}/hiplayerloader.min.js`, I.async = !0, I.onload = () => i(), I.id = `hiplayer-${this.version}-bundle`, document.getElementsByTagName("head").item(0).appendChild(I), this.loading = !1;
+        I.src = `https://hiplayer.hibridcdn.net/l/${this.version}/hiplayerloader.min.js?v=${this.subversion}`, I.async = !0, I.onload = () => i(), I.id = `hiplayer-${this.version}-bundle`, document.getElementsByTagName("head").item(0).appendChild(I), this.loading = !1;
       });
     },
     destroyBundle() {
